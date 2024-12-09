@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+section{
+    padding: 0 10%;
+}
+
+section ul{
+    display: grid;
+    row-gap: 10px;
+}
+
+section ul span{
+    background-color: aquamarine;
+    display: grid;
+    padding: 14px 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+section ul span b{
+    justify-self: end;
+}
+
+section ul li{
+    cursor: pointer;
+}
+
+section ul li p{
+    display: none;
+}
+
+section ul li.active p{
+    display: block;
+    padding: 10px;
+}
